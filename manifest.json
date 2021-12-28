@@ -1,0 +1,25 @@
+{
+  "name": "tinderttv",
+  "description": "tinderttv",
+  "version": "0.11",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://tinder.com/app/profile"],
+      "js": ["main.js"]
+    },
+    {
+      "matches": ["https://tinder.com/app/profile"],
+      "js": ["load.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://tinder.com/*"],
+      "js": ["app.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "tabs"]
+}

@@ -1,0 +1,24 @@
+:root {
+  --color--brand-coral: #ff6036;
+  --color--brand-hot-pink: #fd267a;
+}
+
+.btn {
+  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 27%);
+  background: -webkit-linear-gradient(
+    225deg,
+    var(--color--brand-coral, inherit),
+    var(--color--brand-hot-pink, inherit)
+  );
+  background: linear-gradient(
+    225deg,
+    var(--color--brand-coral, inherit),
+    var(--color--brand-hot-pink, inherit)
+  );
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
